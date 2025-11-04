@@ -1,0 +1,1221 @@
+
+
+
+@media (min-width: 375px) and (max-width: 749px) {
+
+ header {
+  display: flex;
+  justify-content: space-between; /* bandeiras à direita, menu à esquerda */
+  align-items: center;
+  background-color: #114b6c;
+  padding: 5px 45px; /* diminui a altura da barra */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  }
+
+
+
+     #lista {
+   display: none;
+    flex-direction: column;
+    /*background-color: transparent;*/
+    position: absolute;
+    top: 100%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    left: 0;
+  }
+
+  #lista li {
+    list-style: none;
+    background-color: #0b4a69; /* cor só atrás de cada link */
+    padding: 7px 15px;
+    width: auto; /* limita a largura ao tamanho do texto */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    
+  }
+
+  #lista li :hover {
+    background-color: #1d56725d; /* cor só atrás de cada link */
+    padding: 10px 10px;
+    width: auto; /* limita a largura ao tamanho do texto */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  #lista a {
+    padding: 5px;
+    font-size: 15px;
+    margin-left: 15px;
+    display: block;
+
+  }
+    #lista li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+  }
+
+  #lista.active {
+    display: flex; /* mostra o menu quando ativo */
+  }
+
+
+.hamburger {
+  display: none; /* escondido no desktop */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  gap: 5px;
+  z-index: 2000; /* fica acima do resto */
+
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+    .hamburger {
+    display: flex;
+
+  }
+
+
+
+ 
+  #bandeiras {
+    margin-top: 5px;
+    margin-left: 75%;
+    display: flex;
+        order: -1; /* sobe as bandeiras */
+
+  }
+
+  #fundo h1{
+    display: flex;
+    text-align: center;
+    font-size: 22px;
+    height: 150px;
+
+  }
+
+  #server{
+    width: 500px;
+    height: 550px;
+    filter: blur(1px);
+    width: 100%;
+    background-size: cover;        /* cobre toda a área sem distorcer */
+
+  }
+
+  #fundo h2{
+    width: 270px;
+    margin-top: 45px;
+    display: flex;
+    text-align: justify;
+    font-size: 15px;
+  }
+
+
+  #beggin {
+  min-height: 100vh; /* ocupa toda a altura da tela */
+  display: flex;
+  align-items: center;       /* Centraliza verticalmente */
+  justify-content: center;   /* Centraliza horizontalmente */
+  gap: 80px;                 /* Espaço entre a imagem e o texto */
+  padding: 80px 40px;        /* Aumentei um pouco o padding */
+  border-bottom: 1px solid #ccc;
+  flex-wrap: wrap;           /* Faz o layout ser responsivo */
+  padding: 150px 45px;  /* Aumentei o espaço vertical */
+
+}
+
+#profileTextsobre{
+font-family: "Libertinus Serif", serif;
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: justify;
+  max-width: 800px;
+  margin: 0;    
+}
+
+#foto {
+  box-shadow: 4px 8px 7px gray;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;            /* Impede a imagem de encolher */
+}
+
+
+
+  .certific {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(34, 82, 121);
+  font-size: 25px;
+  text-shadow: 1px 1px 1px rgb(22, 21, 21);
+}
+
+
+.carrossel-imagens{
+  margin-top: 150px;
+}
+.carrossel-controles {
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carrossel-controles button {
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  font-size: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 2px 15px;
+  transition: 0.3s;
+}
+
+.carrossel-controles button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+
+#HardSkills {
+  padding: 50px 0; /* Reduzi padding para não empurrar demais */
+  text-align: center; /* Centraliza o texto e conteúdo */
+}
+
+#HardSkills h1 {
+ position: relative; /* volta ao fluxo normal */
+  margin: 75px auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(34, 82, 121);
+  font-size: 25px;
+  text-shadow: 1px 1px 1px rgb(88, 87, 87);
+}
+
+
+#HardSkills img {
+   display: block; /* padrão para imagens centralizadas */
+  margin: auto;
+  width: 600px;
+  height: 290px;
+  max-width: 100%; /* evita que ultrapasse o container */
+}
+
+
+
+#SoftSkills {
+  padding: 50px 0; /* Reduzi padding para não empurrar demais */
+  text-align: center; /* Centraliza o texto e conteúdo */
+}
+
+#SoftSkills h1 {
+  position: relative; /* volta ao fluxo normal */
+  margin: 75px auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(34, 82, 121);
+  font-size: 25px;
+  text-shadow: 1px 1px 1px rgb(88, 87, 87);
+}
+#SoftSkills img {
+   display: block; /* padrão para imagens centralizadas */
+  margin: auto;
+  width: 600px;
+  height: 290px;
+  max-width: 100%; /* evita que ultrapasse o container */
+}
+
+#linkedin {
+  
+  overflow: visible; /* deixa o aumento aparecer fora da div */
+}
+
+#linkedin img{
+  border: 0;
+  width: auto;
+  height: 40px;
+  display: inline;
+  margin-left:88%;
+  margin-bottom: 2%;
+  
+  transition: transform 0.5s ease;
+
+}
+
+#git {
+  overflow: visible; /* deixa o aumento aparecer fora da div */
+}
+
+#git img{
+  border: 0;
+  width: auto;
+  height: 40px;
+  display: inline;
+  margin-left:88%;
+  text-align: right;
+  margin-bottom: 1%;
+  transition: transform 0.5s ease;
+
+}
+
+
+#linkedin img:hover {
+    transform: scale(1.1);
+}
+
+
+#git img:hover {
+    transform: scale(1.1);
+}
+#linguagens {
+    background-color: rgb(26, 65, 95);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    overflow: hidden; /* impede barras de rolagem internas */
+}
+
+#linguagens h2 {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+/* Container horizontal dos ícones */
+.icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    overflow: hidden; /* impede qualquer scroll dentro dessa div */
+}
+
+.icones img {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s ease;
+
+}
+
+.icones img:hover {
+    transform: scale(1.1);
+}
+
+/* Garante que o body não crie scroll */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+
+}
+
+
+
+
+
+@media (min-width: 750px) and (max-width: 1000px) {
+
+header {
+  display: flex;
+  justify-content: space-between; /* bandeiras à direita, menu à esquerda */
+  align-items: center;
+  background-color: #114b6c;
+  padding: 5px 45px; /* diminui a altura da barra */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  }
+
+
+
+     #lista {
+   display: none;
+    flex-direction: column;
+    /*background-color: transparent;*/
+    position: absolute;
+    top: 100%;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    left: 0;
+  }
+
+  #lista li {
+    list-style: none;
+    background-color: #0b4a69; /* cor só atrás de cada link */
+    padding: 7px 15px;
+    width: auto; /* limita a largura ao tamanho do texto */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    
+  }
+
+  #lista li :hover {
+    background-color: #1d56725d; /* cor só atrás de cada link */
+    padding: 10px 10px;
+    width: auto; /* limita a largura ao tamanho do texto */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  #lista a {
+    padding: 5px;
+    font-size: 15px;
+    margin-left: 15px;
+    display: block;
+
+  }
+    #lista li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+  }
+
+  #lista.active {
+    display: flex; /* mostra o menu quando ativo */
+  }
+
+
+.hamburger {
+  display: none; /* escondido no desktop */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  gap: 5px;
+  z-index: 2000; /* fica acima do resto */
+
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+    .hamburger {
+    display: flex;
+
+  }
+
+
+
+ 
+  #bandeiras {
+    margin-top: 5px;
+    margin-left: 85%;
+    display: flex;
+    order: -1; /* sobe as bandeiras */
+
+  }
+
+  #fundo h1{
+    text-align: center;
+    font-size: 40px;
+    
+  }
+
+  #server{
+  width: 500px;
+    height: 550px;
+    filter: blur(1px);
+    width: 100%;
+    background-size: cover;        /* cobre toda a área sem distorcer */
+
+
+  }
+
+  #fundo h2{
+    
+    margin-top: 55px;
+    display: flex;
+    text-align: justify;
+    font-size: 20px;
+
+  }
+
+
+  .certific {
+  margin-bottom: 90px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(34, 82, 121);
+  font-size: 35px;
+  text-shadow: 1px 1px 1px rgb(22, 21, 21);
+  padding: 50px;
+}
+
+
+  #meuscertificados {
+  padding-top: 30px;
+  margin-top: 100px;
+
+  }
+
+
+  .carrossel {
+  padding-bottom: 320px;
+
+}
+
+.carrossel-imagens{
+  margin-top: 150px;
+}
+.carrossel-controles {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carrossel-controles button {
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  font-size: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 2px 15px;
+  transition: 0.3s;
+}
+
+.carrossel-controles button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#HardSkills {
+  padding: 100px 20px;
+  text-align: center;
+  display: grid;
+  place-items: center; /* centraliza tudo dentro */
+}
+
+#HardSkills h1 {
+ position: relative; /* volta ao fluxo normal */
+  margin: 75px auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(34, 82, 121);
+  font-size: 35px;
+  text-shadow: 1px 1px 1px rgb(88, 87, 87);
+}
+
+
+#HardSkills img {
+   display: block; /* padrão para imagens centralizadas */
+  margin: 2% auto 0 auto; /* centraliza horizontalmente */
+  width: auto;
+  height: 460px;
+  max-width: 100%; /* evita que ultrapasse o container */
+}
+
+
+
+#SoftSkills {
+  padding: 100px 0; /* Reduzi padding para não empurrar demais */
+  text-align: center; /* Centraliza o texto e conteúdo */
+}
+
+#SoftSkills h1 {
+  position: relative; /* volta ao fluxo normal */
+  margin: 75px auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(34, 82, 121);
+  font-size: 35px;
+  text-shadow: 1px 1px 1px rgb(88, 87, 87);
+}
+#SoftSkills img {
+  display: block; /* padrão para imagens centralizadas */
+  margin: 2% auto 0 auto; /* centraliza horizontalmente */
+  width: auto;
+  height: 470px;
+  max-width: 100%; /* evita que ultrapasse o container */
+}
+
+#linkedin {
+  
+  overflow: visible; /* deixa o aumento aparecer fora da div */
+}
+
+#linkedin img{
+  border: 0;
+  width: auto;
+  height: 70px;
+  display: inline;
+  margin-left: 89%;
+  margin-bottom: 2%;
+  
+  transition: transform 0.5s ease;
+
+}
+
+#git {
+  overflow: visible; /* deixa o aumento aparecer fora da div */
+}
+
+#git img{
+  border: 0;
+  width: auto;
+  height: 70px;
+  display: inline;
+  margin-left:89%;
+  text-align: right;
+  margin-bottom: 1%;
+  transition: transform 0.5s ease;
+
+}
+
+
+#linkedin img:hover {
+    transform: scale(1.1);
+}
+
+
+#git img:hover {
+    transform: scale(1.1);
+}
+
+
+}
+
+
+
+@media (min-width: 1001px) and (max-width: 1250px) {
+
+ header {
+    display:flex;
+    justify-content: space-between; /* links de um lado, bandeira do outro */
+    align-items: center;
+    position: fixed;
+    border: 1px solid rgb(66, 65, 65);
+    width: 100%;
+    color: white;
+    background-color: rgb(34, 82, 121);
+    z-index: 1000;
+}
+
+header ul{
+    display: flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#lista li {
+  text-shadow: 1px 2px 2px black;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#lista {
+font-size: 20px;
+list-style: none; /* remove os pontinhos */
+margin: 0;
+padding: 0;
+display: flex; /* coloca os <li> em linha */
+gap: 2px; /* espaço entre eles */
+
+}
+
+#lista a {
+  display: block; /* faz o link ocupar toda a área do li */
+  padding: 30px 45px; /* movemos o padding pra cá */
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 2px 2px black;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border-radius: 5px; /* adiciona o mesmo arredondamento */
+}
+
+#lista li:hover{
+    border-radius: 5px;
+    background-color: #7da7ca;
+    transition: 0.3s;
+    border-bottom: 1px solid white
+}
+
+
+.hidden{
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/*----------------------------------------------Divisão-----------------------------------------------------------*/
+/*----------------------------------------------Divisão-----------------------------------------------------------*/
+/*----------------------------------------------Divisão-----------------------------------------------------------*/
+/*----------------------------------------------Divisão-----------------------------------------------------------*/
+
+#bandeiras {
+  display: flex;
+  gap: 20px; /* espaço entre as bandeiras */
+}
+
+button {
+    display: inline-block;   /* não deixa expandir */
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    
+}
+
+#tradutorbr {
+    display: inline-block; /* só ocupa o tamanho da imagem */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 0; /* se quiser afastar da borda direita */
+     transition: transform 0.5s ease;
+}
+
+#brasil {
+    height: 40px;
+    width: auto;
+}
+
+
+#tradutorbr img:hover {
+    transform: scale(1.1);
+}
+
+
+#tradutoren img:hover{
+  
+    transform: scale(1.1);
+}
+
+
+
+#tradutoren{
+  display: inline-block; /* só ocupa o tamanho da imagem */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 30px; /* se quiser afastar da borda direita */
+    transition: transform 0.5s ease;
+
+}
+
+
+#estadosunidos{
+    height: 40px;
+    width: auto;
+}
+
+
+
+  #fundo h1{
+    text-align: center;
+    font-size: 40px;
+    
+  }
+
+  #server{
+    box-shadow: 4px 8px 7px rgb(16, 44, 66);
+    overflow:hidden;
+    width: 100%;
+    height: 950px;
+    color: white;
+    filter: blur(2px);
+
+  }
+
+  #fundo h2{
+    
+    margin-top: 35px;
+    display: flex;
+    text-align: justify;
+    font-size: 20px;
+  }
+
+
+  .certific {
+  margin-bottom: 90px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(34, 82, 121);
+  font-size: 35px;
+  text-shadow: 1px 1px 1px rgb(22, 21, 21);
+  padding: 50px;
+}
+
+
+  #meuscertificados {
+  padding-top: 30px;
+
+    margin-top: 100px;
+
+  }
+
+
+  .carrossel {
+  padding-bottom: 320px;
+
+}
+
+.carrossel-imagens{
+  margin-top: 150px;
+}
+.carrossel-controles {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carrossel-controles button {
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  font-size: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 2px 15px;
+  transition: 0.3s;
+}
+
+.carrossel-controles button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+#HardSkills {
+  padding: 100px 20px;
+  text-align: center;
+  display: grid;
+  place-items: center; /* centraliza tudo dentro */
+}
+
+#HardSkills h1 {
+ position: relative; /* volta ao fluxo normal */
+  margin: 75px auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(34, 82, 121);
+  font-size: 35px;
+  text-shadow: 1px 1px 1px rgb(88, 87, 87);
+}
+
+
+#HardSkills img {
+   display: block; /* padrão para imagens centralizadas */
+  margin: 2% auto 0 auto; /* centraliza horizontalmente */
+  width: auto;
+  height: 550px;
+  max-width: 100%; /* evita que ultrapasse o container */
+}
+
+
+
+#SoftSkills {
+  padding: 100px 0; /* Reduzi padding para não empurrar demais */
+  text-align: center; /* Centraliza o texto e conteúdo */
+}
+
+#SoftSkills h1 {
+  position: relative; /* volta ao fluxo normal */
+  margin: 75px auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(34, 82, 121);
+  font-size: 35px;
+  text-shadow: 1px 1px 1px rgb(88, 87, 87);
+}
+#SoftSkills img {
+  display: block; /* padrão para imagens centralizadas */
+  margin: 2% auto 0 auto; /* centraliza horizontalmente */
+  width: auto;
+  height: 550px;
+  max-width: 100%; /* evita que ultrapasse o container */
+}
+
+#linkedin {
+  
+  overflow: visible; /* deixa o aumento aparecer fora da div */
+}
+
+#linkedin img{
+  border: 0;
+  width: auto;
+  height: 70px;
+  display: inline;
+  margin-left:93%;
+  margin-bottom: 2%;
+  
+  transition: transform 0.5s ease;
+
+}
+
+#git {
+  overflow: visible; /* deixa o aumento aparecer fora da div */
+}
+
+#git img{
+  border: 0;
+  width: auto;
+  height: 70px;
+  display: inline;
+  margin-left:93%;
+  text-align: right;
+  margin-bottom: 1%;
+  transition: transform 0.5s ease;
+
+}
+
+
+#linkedin img:hover {
+    transform: scale(1.1);
+}
+
+
+#git img:hover {
+    transform: scale(1.1);
+}
+
+}
+
+
+@media (min-width: 1251px) and (max-width: 1550px) {
+
+ header {
+    display:flex;
+    justify-content: space-between; /* links de um lado, bandeira do outro */
+    align-items: center;
+    position: fixed;
+    border: 1px solid rgb(66, 65, 65);
+    width: 100%;
+    color: white;
+    background-color: rgb(34, 82, 121);
+    z-index: 1000;
+}
+
+header ul{
+    display: flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+#lista li {
+  text-shadow: 1px 2px 2px black;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#lista {
+font-size: 22px;
+list-style: none; /* remove os pontinhos */
+margin: 0;
+padding: 0;
+display: flex; /* coloca os <li> em linha */
+gap: 2px; /* espaço entre eles */
+
+}
+
+#lista a {
+  display: block; /* faz o link ocupar toda a área do li */
+  padding: 30px 45px; /* movemos o padding pra cá */
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 2px 2px black;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border-radius: 5px; /* adiciona o mesmo arredondamento */
+}
+
+#lista li:hover{
+    border-radius: 5px;
+    background-color: #7da7ca;
+    transition: 0.3s;
+    border-bottom: 1px solid white
+}
+
+
+.hidden{
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/*----------------------------------------------Divisão-----------------------------------------------------------*/
+/*----------------------------------------------Divisão-----------------------------------------------------------*/
+/*----------------------------------------------Divisão-----------------------------------------------------------*/
+/*----------------------------------------------Divisão-----------------------------------------------------------*/
+
+#bandeiras {
+  display: flex;
+  gap: 20px; /* espaço entre as bandeiras */
+}
+
+button {
+    display: inline-block;   /* não deixa expandir */
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    
+}
+
+#tradutorbr {
+    display: inline-block; /* só ocupa o tamanho da imagem */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 0; /* se quiser afastar da borda direita */
+     transition: transform 0.5s ease;
+}
+
+#brasil {
+    height: 40px;
+    width: auto;
+}
+
+
+#tradutorbr img:hover {
+    transform: scale(1.1);
+}
+
+
+#tradutoren img:hover{
+  
+    transform: scale(1.1);
+}
+
+
+
+#tradutoren{
+  display: inline-block; /* só ocupa o tamanho da imagem */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 30px; /* se quiser afastar da borda direita */
+    transition: transform 0.5s ease;
+
+}
+
+
+#estadosunidos{
+    height: 40px;
+    width: auto;
+}
+
+  #fundo h1{
+    text-align: center;
+    font-size: 40px;
+    
+  }
+
+  #server{
+        box-shadow: 4px 8px 7px rgb(16, 44, 66);
+    overflow:hidden;
+    width: 100%;
+    height: 950px;
+    color: white;
+    filter: blur(2px);
+  }
+
+  #fundo h2{
+    
+    margin-top: 35px;
+    display: flex;
+    text-align: justify;
+    font-size: 20px;
+  }
+
+
+  .certific {
+  margin-bottom: 90px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(34, 82, 121);
+  font-size: 35px;
+  text-shadow: 1px 1px 1px rgb(22, 21, 21);
+  padding: 50px;
+}
+
+
+  #meuscertificados {
+  padding-top: 30px;
+
+    margin-top: 100px;
+
+  }
+
+
+  .carrossel {
+  padding-bottom: 320px;
+
+}
+
+.carrossel-imagens{
+  margin-top: 150px;
+}
+.carrossel-controles {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.carrossel-controles button {
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  font-size: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 2px 15px;
+  transition: 0.3s;
+}
+
+.carrossel-controles button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
+#HardSkills {
+  padding: 100px 20px;
+  text-align: center;
+  display: grid;
+  place-items: center; /* centraliza tudo dentro */
+}
+
+#HardSkills h1 {
+ position: relative; /* volta ao fluxo normal */
+  margin: 75px auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(34, 82, 121);
+  font-size: 35px;
+  text-shadow: 1px 1px 1px rgb(88, 87, 87);
+}
+
+
+#HardSkills img {
+   display: block; /* padrão para imagens centralizadas */
+  margin: 2% auto 0 auto; /* centraliza horizontalmente */
+  width: auto;
+  height: 650px;
+  max-width: 100%; /* evita que ultrapasse o container */
+}
+
+
+
+#SoftSkills {
+  padding: 100px 0; /* Reduzi padding para não empurrar demais */
+  text-align: center; /* Centraliza o texto e conteúdo */
+}
+
+#SoftSkills h1 {
+  position: relative; /* volta ao fluxo normal */
+  margin: 75px auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(34, 82, 121);
+  font-size: 35px;
+  text-shadow: 1px 1px 1px rgb(88, 87, 87);
+}
+#SoftSkills img {
+  display: block; /* padrão para imagens centralizadas */
+  margin: 2% auto 0 auto; /* centraliza horizontalmente */
+  width: auto;
+  height: 650px;
+  max-width: 100%; /* evita que ultrapasse o container */
+}
+
+#linkedin {
+  
+  overflow: visible; /* deixa o aumento aparecer fora da div */
+}
+
+#linkedin img{
+  border: 0;
+  width: auto;
+  height: 70px;
+  display: inline;
+  margin-left:93%;
+  margin-bottom: 2%;
+  
+  transition: transform 0.5s ease;
+
+}
+
+#git {
+  overflow: visible; /* deixa o aumento aparecer fora da div */
+}
+
+#git img{
+  border: 0;
+  width: auto;
+  height: 70px;
+  display: inline;
+  margin-left:93%;
+  text-align: right;
+  margin-bottom: 1%;
+  transition: transform 0.5s ease;
+
+}
+
+
+#linkedin img:hover {
+    transform: scale(1.1);
+}
+
+
+#git img:hover {
+    transform: scale(1.1);
+}
+
+
+}
+

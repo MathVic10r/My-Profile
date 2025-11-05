@@ -1,7 +1,7 @@
 
 
 
-@media (min-width: 375px) and (max-width: 749px) {
+@media (max-width: 749px) {
 
  header {
   display: flex;
@@ -141,6 +141,15 @@
 
 }
 
+#fundo #perfilsub{
+  font-family: "Libertinus Serif", serif;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 35px;
+  width: 250px;
+}
+
 #profileTextsobre{
 font-family: "Libertinus Serif", serif;
   font-size: 15px;
@@ -199,10 +208,6 @@ font-family: "Libertinus Serif", serif;
 }
 
 
-
-
-
-
 #HardSkills {
   padding: 50px 0; /* Reduzi padding para não empurrar demais */
   text-align: center; /* Centraliza o texto e conteúdo */
@@ -219,7 +224,8 @@ font-family: "Libertinus Serif", serif;
 
 
 #HardSkills img {
-   display: block; /* padrão para imagens centralizadas */
+  position: relative; /* volta ao fluxo normal */
+  display: block; /* padrão para imagens centralizadas */
   margin: auto;
   width: 600px;
   height: 290px;
@@ -444,21 +450,43 @@ header {
 
   }
 
-  #fundo h1{
+  #fundo #profileTitle{
     text-align: center;
     font-size: 40px;
-    
+      height: 150px;
+
   }
 
   #server{
-  width: 500px;
+    width: 500px;
     height: 550px;
     filter: blur(1px);
     width: 100%;
     background-size: cover;        /* cobre toda a área sem distorcer */
-
-
   }
+
+
+#fundo #perfilsub{
+  font-family: "Libertinus Serif", serif;
+  font-size: 25px;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 450px;
+  text-align: center;
+}
+
+h1 #profileTextsobre{
+  font-family: "Libertinus Serif", serif;
+  font-size: 1px;
+  line-height: 1.2;
+  text-align: justify;
+  max-width: 900px;
+  margin-top: 5px;
+
+}
+
 
   #fundo h2{
     
@@ -763,6 +791,28 @@ button {
     filter: blur(2px);
 
   }
+
+#fundo #perfilsub{
+  font-family: "Libertinus Serif", serif;
+  font-size: 30px;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-top: 65px;
+  margin-bottom: 25px;
+  width: 450px;
+  text-align: center;
+}
+
+h1 #profileTextsobre{
+  font-family: "Libertinus Serif", serif;
+  font-size: 1px;
+  line-height: 1.2;
+  text-align: justify;
+  max-width: 1000px;
+  margin-top: 5px;
+
+}
+
 
   #fundo h2{
     
@@ -1071,6 +1121,26 @@ button {
     text-align: justify;
     font-size: 20px;
   }
+
+#fundo #perfilsub{
+  font-family: "Libertinus Serif", serif;
+  font-size: 30px;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  width: 450px;
+  text-align: center;
+}
+
+h1 #profileTextsobre{
+  font-family: "Libertinus Serif", serif;
+  font-size: 15px;
+  line-height: 1.2;
+  text-align: justify;
+  max-width: 1000px;
+  margin-top: 5px;
+
+}
 
 
   .certific {

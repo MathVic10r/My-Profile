@@ -969,7 +969,7 @@ h1 #profileTextsobre{
 }
 
 
-@media (min-width: 1251px) and (max-width: 1550px) {
+@media (min-width: 1550px)  {
 
  header {
     display:flex;
@@ -981,6 +981,7 @@ h1 #profileTextsobre{
     color: white;
     background-color: rgb(34, 82, 121);
     z-index: 1000;
+    
 }
 
 header ul{

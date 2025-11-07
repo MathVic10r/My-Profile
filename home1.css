@@ -1215,7 +1215,7 @@ h1 #profileTextsobre{
 
 #HardSkills img {
    display: block; /* padrão para imagens centralizadas */
-  margin: 2% auto 0 auto; /* centraliza horizontalmente */
+  margin: 2% 55px 0 auto; /* centraliza horizontalmente */
   width: auto;
   height: 650px;
   max-width: 100%; /* evita que ultrapasse o container */
